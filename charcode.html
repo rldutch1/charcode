@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Robert Holland">
+  <meta name="description" content="Translate characters into ASCII eqivalent">
+  <meta name="creation_date" content="Mon Jun 13 2011 15:45:24 GMT-0700 (US Mountain Standard Time)">
+  <meta name="keywords" content="ASCII, charcode, character code">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="2011">
+  <meta charset="UTF-8">
+
+<title>Charcode</title>
+<style>
+/*common css*/
+table, th, td {border-collapse:collapse; border: 1px solid black;}
+th {background-color:#ffff00;}
+tr:nth-child(even) {background: #CCC;}
+tr:nth-child(odd) {background: #FFF;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+.tBodyA {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	padding-left: 5px;
+	line-height: normal;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #c0c0c0;
+}
+.tBodyB {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #55B23C;
+	padding-left: 5px;
+	line-height: normal;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #55B23C;
+}
+.tBodyC {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+	padding-left: 5px;
+	line-height: normal;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #EEECE2;
+}
+.tBodyCa {
+	padding-left: 5px;
+	line-height: normal;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #EEECE2;
+}
+table,td,th
+{
+border:1px solid black;
+}
+table
+{
+width:40%;
+border-collapse:collapse;
+}
+th
+{
+height:50px;
+}
+#symbol{font: normal 22px Georgia,serif;;}
+#coffee{font: normal 492px Georgia,serif;;}
+.left {text-align: left; border: 3px solid green;}
+</style>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- <script type="text/javascript" src="http://example.com/js/filename.js"></script>
+<link rel="stylesheet" href="http://example.com/css/filename.css" /> -->
+<script>
+var str, i, j, k, qq, alertmsg;
+var qq=String.fromCharCode(34);
+var end=");"
+
+function clearski() {
+//if (confirm("Are you sure you want to clear form?")) {
+document.form1.reset();
+//}
+}
+
+function showascii1()
+{
+var str	= document.form1.str.value;
+var i = parseInt=((str.length)-(str.length));
+var j = parseInt=(str.length);
+var k;
+var L;
+
+//New One
+var a = parseInt=(str.length)-1; 
+var w = parseInt=(str.length); 
+var b = (str.charCodeAt(a));
+	document.write("<table bgcolor=" + qq + "ffffff" + qq + " font color=" + qq + "ffffff" + qq + " border=" + qq + "0" + qq + ">");
+	document.write("<tr><td>JavaScript</td></tr>");
+	document.write("<tr><td>document.write(String.fromCharCode(");
+for (ii=0;ii<a;ii++)
+{
+	var c = str.charCodeAt(ii);
+  document.write(c + ", ");
+}
+	document.write(b + "));</td></tr>");
+	document.write("<tr><td>&nbsp;</td></tr>");
+	document.write("<tr><td>HTML</td></tr>");
+	document.write("<tr><td>");
+for (z=0;z<w;z++)
+{
+	var G = str.charCodeAt(z);
+  document.write("<span style='color: #3366ff;'>&#38;&#35;"+G+"&#59;</span>");
+}
+	document.write("</td></tr>");
+	document.write("<tr><td>&nbsp;</td></tr>");
+	document.write("<tr><td><a href='https://www.w3schools.com/jsref/jsref_push.asp' target='_blank'>JavaScript Push Example:</a></td></tr>");
+	document.write("<tr><td> </td></tr>");
+	document.write("<tr><td>&#60; &#115; &#99; &#114; &#105; &#112; &#116; &#62;<br /> &nbsp; &#32; &#99; &#111; &#110; &#115; &#116; &nbsp; &#32; &#120; &#121; &#122; &#112; &#100; &#113; &#97; &#98; &#99; &nbsp; &#32; &#61; &nbsp; &#32; &#91; &#34; &#66; &#97; &#110; &#97; &#110; &#97; &#34; &#44; &nbsp; &#32; &#34; &#79; &#114; &#97; &#110; &#103; &#101; &#34; &#44; &nbsp; &#32; &#34; &#65; &#112; &#112; &#108; &#101; &#34; &#44; &nbsp; &#32; &#34; &#77; &#97; &#110; &#103; &#111; &#34; &#93; &#59; <br />&nbsp; &#32; &#120; &#61; &#83; &#116; &#114; &#105; &#110; &#103; &#46; &#102; &#114; &#111; &#109; &#67; &#104; &#97; &#114; &#67; &#111; &#100; &#101; &#40; &#56; &#50; &#44; &nbsp; &#32; &#49; &#49; &#49; &#44; &nbsp; &#32; &#57; &#56; &#44; &#32; &#49; &#48; &#49; &#44; &#32; &#49; &#49; &#52; &#44; &nbsp; &#32; &#49; &#49; &#54; &#41; &#59; &nbsp; &#32; <br /> &nbsp; &#120; &#121; &#122; &#112; &#100; &#113; &#97; &#98; &#99; &#46; &#112; &#117; &#115; &#104; &#40; &#34; &#75; &#105; &#119; &#105; &#34; &#44; &nbsp; &#32; &#34; &#76; &#101; &#109; &#111; &#110; &#34; &#44; &nbsp; &#32; &#34; &#67; &#111; &#99; &#111; &#110; &#117; &#116; &#34; &#44; &nbsp; &#32; &#120; &#41; &#59; <br />&nbsp; &#32; &nbsp; &#32; &#100; &#111; &#99; &#117; &#109; &#101; &#110; &#116; &#46; &#103; &#101; &#116; &#69; &#108; &#101; &#109; &#101; &#110; &#116; &#66; &#121; &#73; &#100; &#40; &#34; &#100; &#101; &#109; &#111; &#34; &#41; &#46; &#105; &#110; &#110; &#101; &#114; &#72; &#84; &#77; &#76; &nbsp; &#32; &#61; &nbsp; &#32; &#120; &#121; &#122; &#112; &#100; &#113; &#97; &#98; &#99; &#59; &nbsp; &#32; <br />&#60; &#47; &#115; &#99; &#114; &#105; &#112; &#116; &#62;</td></tr>");
+	document.write("</table><br /><hr />");
+// End First Table
+	document.write("<table bgcolor=" + qq + "C0C0C0" + qq + " font color=" + qq + "ffffff" + qq + " border=" + qq + "1" + qq + ">");
+	document.write("<caption>ASCII Codes</caption><tr><th>ASCII Character</th><th>ASCII Character Code</th></tr>");
+for (i=i;i<j;i++)
+{
+	k = String.fromCharCode(parseInt=(str.charCodeAt(i)));
+	L = str.charCodeAt(i);
+	document.write("<tr><td>");
+	document.write(k + "</td><td>" + str.charCodeAt(i));
+	document.write("</td></tr>");
+}
+	document.write("</table></body><html>");
+// End Second Table
+}
+
+function showascii2()
+{
+var i, j;
+var qq=String.fromCharCode(34);
+var i	= parseInt(document.form1.codebox1.value);
+var j	= parseInt(document.form1.codebox2.value);
+//	document.write("<html><head></head><body>");
+	document.write("<html><head><link rel=" + qq + "stylesheet" + qq + " type=" + qq + "text/css" + qq + " href=" + qq + "./css/CharCode.css" + qq + " /></head><body>");
+	document.write("<style type='text/css'>td {text-align:center}</style>");
+	document.write("<table bgcolor=" + qq + "C0C0C0" + qq + " font color=" + qq + "ffffff" + qq + " border=" + qq + "1" + qq + ">");
+	document.write("<caption>ASCII Character Codes Between " + i + " - " + j + "</caption>");
+	document.write("<tr><th>ASCII Character Code</th><th>ASCII Character</th></tr>");
+for (i=i;i<=j;i++)
+{
+	document.write("<tr><td>");
+	document.write(i + " " + "</td><td>" + String.fromCharCode(i) + "</td></tr>");
+}
+	document.write("</table></body><html>");
+}
+
+function validateForm()
+{
+ var x=document.forms["form1"]["codebox1"].value
+ var y=document.forms["form1"]["codebox2"].value
+if ((isNaN(x)) || (isNaN(y)))
+	{
+	alert("Is Not a Number!");
+	return false;
+	}
+else
+   {
+   showascii2()
+   }
+}
+//$(document).ready(function(){
+//  $("#reset").click(function(){
+//  	$(document.getElementById("form1").reset());
+//  });
+//});
+
+$(document).ready(function(){
+  $("#reset").click(function(){
+  	$(clearski);
+  });
+});
+
+$(document).ready(function(){
+$("#box1").click(function(){
+		$(showascii1());
+  });
+});
+
+$(document).ready(function(){
+$("#box2").click(function(){
+		$(validateForm());
+  });
+});
+
+xxx = "<meta http-equiv='Refresh' content='5;url=mailto:rob@robholland.com' />"
+$(document).ready(function(){
+$("#feedback").click(function(){
+		$(xxx);
+  });
+});
+
+</script>
+
+</head>
+<body>
+
+<form name="form1" size="30%">
+<table border="1">
+<caption>Translate keyboard characters into JavaScript ASCII Character Code</caption>
+<tr><td class="tBodyC" colspan="2">Please type some characters in the box below and click go.</td></tr>
+<tr><td class="tBodyC"><input id="strbox" name="str" size="60"></td><td class="tBodyB"><center><i id="box1" style="font-family:verdana;font-size:110%;color:green">GO!</i></center></td><tr>
+<tr><td class="tBodyA" colspan="2">Enter a range of numbers below. (A large range will be slow)</td></tr>
+<tr><td class="tBodyC" colspan="2">List ASCII characters by number:</td></tr>
+<tr><td class="tBodyC">Enter a number between <input id="showcodes1" name="codebox1" size="5"/> and	<input id="showcodes2" name="codebox2" size="5"/> then click</td>
+<td class="tBodyB"><center><i id="box2" style="font-family:verdana;font-size:110%;color:green">GO!</i></center></td></tr>
+<tr><td class="tBodyC" align="left"><i id="reset" type="reset" style="font-family:verdana;font-size:110%;color:red">Reset</i></td><td class="tBodyC" id="feedback">
+</table>
+</form>
+
+<p id="demo"></p>
+</table>
+<script>
+const charcodes = [126, 96, 33, 64, 35, 36, 37, 94, 38, 42, 40, 41, 43, 61, 8800, 8801, 8802, 8803, 8804, 8805, 8806, 8807, 8808, 8809, 8810, 8811, 42, 45, 91, 93, 123, 125, 92, 124, 58, 8942, 59, 34, 39, 60, 62, 44, 46, 63, 47, 95, 169, 167, 171, 187, 174, 176, 177, 186, 8304, 185, 178, 179, 8308, 8309, 8310, 8311, 8312, 8313, 8314, 8315, 8316, 8317, 8318, 8320, 8321, 8322, 8323, 8324, 8325, 8326, 8327, 8328, 8329, 8330, 8331, 8332, 8333, 8334, 247, 248, 508, 509, 913, 945, 914, 946, 915, 947, 916, 948, 917, 949, 918, 950, 919, 951, 920, 952, 921, 953, 922, 954, 923, 955, 924, 956, 925, 957, 926, 958, 927, 959, 928, 960, 929, 961, 931, 963, 962, 932, 964, 933, 965, 934, 966, 935, 967, 936, 968, 937, 969, 940, 1632, 1633, 1634, 1635, 1636, 1637, 1638, 1639, 1640, 1641, 8240, 8230, 8539, 188, 8531, 8540, 189, 8541, 8532, 190, 8542, 8482, 8453, 8364, 8356, 8592, 8593, 8594, 8595, 8596, 8597, 8730, 8734, 10017, 9770, 9650, 9658, 9660, 9668, 9786, 9787, 9792, 9794, 9824, 9827, 9829, 9830, 9835, 162, 165, 8853, 8854, 8855, 8856, 8857, 8858, 8859, 8860, 8861, 8862, 8863, 8864, 8865, 7491, 7495, 7580, 7496, 7497, 7584, 7501, 688, 8305, 690, 7503, 737, 7504, 8319, 7506, 7510, 691, 738, 7511, 7512, 7515, 695, 739, 696, 7611, 7468, 7470, 7472, 7473, 7475, 7476, 7477, 7478, 7479, 7480, 7481, 7482, 7484, 7486, 7487, 7488, 7489, 11389, 7490, 9193, 9194, 9195, 9196, 9197, 9198, 9199, 9204, 9205, 9206, 9207, 9208, 9209, 9210, 9749, 9760, 9775, 9803, 9855, 9889, 9898, 9899, 9940, 9994, 9995, 9996, 9997, 9964, 9200, 9203];
+
+let codeout = "<table border='1'><caption>Common Characters and Codes</caption><tr><th>ASCII Character</th><th>ASCII Character Code</th><th>JavaScript Syntax</th><th>HTML Syntax</th></tr>";
+charcodes.forEach(showChCodes); //Run the showChCodes function for each item in the charcodes array.
+document.getElementById("demo").innerHTML = codeout;
+
+function showChCodes(value, index, array) {
+var td_last;
+if(value == "8304"){
+	td_last="<td>&#38;&#35;"+value+"&#59;<br />&#38;&#35;x2070&#59;</td>";
+}
+else {
+	td_last="<td>&#38;&#35;"+value+"&#59;</td>";
+}
+codeout += "<tr><td id='symbol'>"+String.fromCharCode(value)+"</td><td>"+value+"</td><td>document.write(String.fromCharCode("+value+"));</td>"+td_last+"<tr>"
+}
+codeout += "</table>";
+</script>
+</body>
+</html>
